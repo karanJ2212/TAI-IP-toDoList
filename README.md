@@ -49,7 +49,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link]() currently unavailable.
+- [Live Demo Link](https://karan-todos.netlify.app/) 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
