@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,600;1,200&family=Roboto:wght@300;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.5) 50%,
+      #3a3939 50%
+    ),
+    url("assets/background.jpg");
+  background-size: cover;
+}
+h1 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 5%;
+  font-size: 10rem;
+}
+
+.form {
+  margin: 0 auto; /* Center horizontally */
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 20px;
+  width: 700px;
+  text-align: center;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 1.1); /* Add a box shadow with more depth */
+  transform: translateY(-10px); /* Slightly lift the form */
+  transition: transform 0.3s ease-in-out; /* Add a smooth transition on hover */
+}
+
+.input {
+  background: #333;
+  border: none;
+  color: white;
+  padding: 20px;
+  margin: 20px 0;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.input:focus {
+  transform: scale(1.09);
+}
+
+.List {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #333;
+  color: white;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+
+.List li.completed {
+  color: #b6b6b6;
+  text-decoration: line-through;
+  background: #444;
+}
+
+.list_items:hover {
+  background: #444;
+}
+
+.trashContainer {
+  margin-left: auto;
+  /* display: inline-block; */
+  display: none;
+}
+
+.show {
+  display: inline-block;
+}
+
+#deleteCompleted {
+  padding: 10px;
+  background: #333;
+  box-shadow: 0 10px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  color: white;
+  /* margin-top: 5px; */
+}
+
+/* #deleteCompleted:hover {
+  transform: translateY(-10px);
+} */
